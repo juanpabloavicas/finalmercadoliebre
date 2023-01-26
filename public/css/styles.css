@@ -1,0 +1,534 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+
+   
+   width: 100%;
+   height: 100%;
+   background-color: #ebebeb;
+   font-family: 'Roboto', sans-serif;
+
+}
+
+
+.main-header{
+
+   font-size: 12px;
+   background-color: #fff159;
+   padding: 20px;
+   margin: 0;
+   
+}
+
+.logo{
+   width: 200px;
+   
+}
+
+.copy-header{
+   font-weight: 400px;
+   text-align: center;
+}
+
+.hamburger-button{
+   
+   background-color:#1259c3;
+   padding: 15px;
+   color: white;
+   display: block;
+   border-radius: 8px;
+   max-width: 50px;
+   text-align: center;
+   font-size: 18px;
+   margin: auto;
+
+}
+
+.main-navbar{
+   
+   display: none;
+}
+
+.search{
+   display: none;
+}
+
+.main-navbar ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.main-navbar a{
+   text-decoration: none;
+   color: #333;
+   display: inline-block;
+   padding: 5px 0;
+   font-size: 14px;
+  
+
+} 
+.main-navbar .left-navbar a:hover{
+   color:black;
+   transition: all 0.60s;
+}
+.main-navbar .left-navbar a{
+ color: #666;
+ font-family:  Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+ font-weight: 350;
+ font-size: 16px;
+}
+
+.main-navbar .right-navbar a{
+   color: #333;
+   font-weight: 300;
+}
+.main-navbar .right-navbar a:hover{
+   color: black;
+ 
+   transition: all 0.60s;
+   
+}
+
+.create-form{
+   padding: 48px 15px;
+   
+}
+
+.control-formulario{
+   margin-bottom: 29px;
+   font-weight: bold;
+
+}
+
+.control-formulario label{
+   margin-bottom: 5px;
+   font-family: 'Roboto', sans-serif;
+   display: block;
+   width: 60%;
+   margin: auto;
+   
+
+}
+.control {
+   width: 60%;
+   padding: 8px 8px;
+   margin: auto;
+   display: block;
+
+}
+
+.boton-formulario{
+   text-decoration: none;
+   background-color: #1259c3;
+   border: none;
+   font-size: 20px;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 5px;
+   
+   margin:  auto;
+   display:block;
+  
+}
+
+ 
+.control-formulario2{
+   
+
+
+
+}
+   
+
+.boton-formulario2{
+   text-decoration: none;
+   background-color: #1259c3;
+   border: none;
+   font-size: 20px;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 5px;
+   width: 60%;
+   margin:  auto;
+   display: block;
+  
+
+   
+}
+
+
+
+
+
+
+
+
+@media (min-width:768px){
+ 
+   .main-header-top-bar{
+
+      display: flex;
+      justify-content: space-between;
+      
+   }
+   .search{
+      margin: 0;
+      align-items: center;
+     
+   }
+
+   .copy-header{
+   
+      max-width: 350px;
+      text-align: right;
+   }
+   .hamburger-button{
+      display: none;
+   }
+   .main-navbar{
+      display: flex;
+      justify-content: space-between;
+   }
+   .main-navbar ul{
+      display: flex;
+   }
+
+   .main-navbar li{
+      margin: 0 5px;
+   }
+   .search{
+      display: flex;
+   }
+   .main-navbar a{
+      color: #333;
+      
+   }
+
+}
+
+
+@media (min-width:1200px){
+
+   
+   .logo{
+      width: 250px;
+   }
+
+   .main-header-top-bar, .main-navbar{
+
+      max-width: 1200px;
+      margin: auto;
+   }
+   .main-header-top-bar{
+      align-items: center;
+   }
+   .copy-header{
+      margin: 0;
+      max-width: none;
+      font-size: 22px;
+      font-weight: 400;
+   }
+   .main-navbar{
+      margin-top: 40px;
+   }
+   .main-navbar li{
+      margin: 0 10px;
+   }
+   .main-navbar a{
+      font-size: 19px;
+   }
+   
+}
+
+
+
+.banner{
+   width: 84%;
+   margin: auto;
+   overflow: hidden;
+   
+}
+
+.banner ul{
+   padding: 0;
+   display: flex;
+   width: 400%;
+
+   animation: cambio 20s infinite alternate;
+}
+
+.banner li{
+   list-style: none;
+   width: 100%;
+}
+.banner img{
+   width: 100%;
+   
+}
+
+@keyframes cambio {
+   0% {margin-left: 0;}
+   20% {margin-left: 0;}
+
+   25% {margin-left: -100%;}
+   45% {margin-left: -100%;}
+
+   50% {margin-left: -200%;}
+   70% {margin-left: -200%;}
+
+   75% {margin-left: -200%;}
+   100% {margin-left: -200%;}
+}
+
+
+
+   
+
+.title{
+   font-size: 26px;
+   font-weight: 300;
+   margin: 0 0 0 8px;
+
+   padding-left: 20px;
+   text-align: left;
+   color:#666;
+   margin-top: 20px;
+   font-family:  Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+ 
+.container{
+   
+   width: 90%;
+   max-width: 1800px;
+   height: 90%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: auto;
+   
+ 
+}
+ 
+.container .card{
+   background-color: white;
+   width: 330px;
+   height: 430px;
+   border-radius: 5px;
+   margin: 20px;
+   text-align: center;
+   transition: all 0.40s;
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ 
+}
+.container .card:hover{
+   transform: translateY(-15px);
+   box-shadow: 2px 2px 2px 5px #91e09b
+}
+ 
+.container .card img{
+   width: 300px;
+   height: 300px;
+   border-radius: 8px;
+   
+   
+}
+
+.container .card h4{
+   font-weight: 700px;
+   border-top: solid 1px #ebebeb;
+   padding: 15px;
+  
+ 
+ }
+ .container .card p{
+   padding: 0 1rem;
+   font-size: 16px;
+   font-weight: 300;
+   
+}
+
+.container .card a{
+   font-weight: 500px;
+   text-decoration: none;
+   color: #333;
+}
+
+
+
+
+
+
+
+
+footer{
+   
+   text-align: center;
+   background-color: white;
+   margin-bottom: 10px;
+   font-size: 17px;
+   padding: 70px 40px;
+   
+
+}
+.fa-credit-card{
+   color: #1259c3;
+   font-size: 2em;
+   
+
+}
+.fa-user-shield{
+   color: #1259c3;
+   font-size: 2em;
+}
+.fa-gift{
+   color: #1259c3;
+   font-size: 2em;
+}
+h3{
+   font-size: 20px;
+
+}
+.gris{
+  color: #666;
+}
+
+
+.container .card i{
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1.5px solid #39b54a;
+background-color: white;
+border-radius: 50%;
+position:absolute;
+color: #39b54a;
+right: 20px;
+top: -15px;
+
+}
+
+
+
+.title2{
+   font-size: 26px;
+   font-weight: 300;
+   margin: 0 0 0 8px;
+
+   padding-left: 20px;
+   text-align: left;
+   color:#666;
+   margin-top: 20px;
+   font-family:  Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+ 
+
+.container2{
+
+   width: 90%;
+   max-width: 1800px;
+   height: 90%;
+   display: none;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   position: relative;
+   
+
+   
+
+}
+
+.container2 .card{
+   background-color: white;
+   width: 366px;
+   height: 90px;
+   margin: -5px;
+   padding-top: 10px;
+   padding-left: 20px;
+   font-size:20px;
+   justify-content: center;
+   border-radius: 5px;
+   
+   
+   
+}
+
+
+ 
+
+
+.container2 .card h4{
+   font-weight: 700px;
+   padding: 15px;
+   justify-content: space-between;
+   text-align: center
+   
+
+
+  
+ 
+ }
+ .container2 .card p{
+   padding: 0 1rem;
+   font-size: 16px;
+   font-weight: 300;
+   
+}
+
+.container2 .card a{
+   font-weight: 500px;
+   text-decoration: none;
+   color: #1259c3;
+   padding-left: 60px;
+}
+
+
+.container2 .card i{
+   display: flex;
+   font-size: 16px;
+   padding: 5px;
+   width: 30px;
+   height: 30px;
+   border: 1.5px solid #1259c3;
+   background-color: white;
+   border-radius: 50%;
+   color: #1259c3;
+   position:absolute;
+   
+
+
+   
+}
+@media (min-width:1645px){
+
+   .container2{
+
+      display: flex;
+   }
+   .abajo{
+    
+
+   }
+
+
+  
+}
+
+a{
+   text-decoration: none;
+   color: white;
+}
+.inicio{
+   color: black;
+}
+.verdadero{
+
+   text-align: center;
+}
